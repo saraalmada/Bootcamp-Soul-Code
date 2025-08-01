@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    width: 15%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    transition: .8s;
+    letter-spacing: 5px;
+
+}
+
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 20%;
+
+    border: 1px solid black;
+}
+
+section span {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.sect1 {
+    background-image: url(fundo1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.sect2 {
+    background-image: url(fundo1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.sect3 {
+    background-image: url(fundo1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+footer {
+    width: 100vw;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 5%;
+}
