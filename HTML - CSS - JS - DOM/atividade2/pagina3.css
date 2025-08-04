@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape";
+}
+
+header {
+    grid-area: cabecalho;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1em;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    background-image: linear-gradient(90deg, purple, blue, aqua, green, yellow);
+    background-clip: text;
+    color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    cursor: pointer;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: purple;
+}
+
+main {
+    grid-area: conteudo;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.fotos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .fotos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .fotos {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+    grid-area: rodape;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1em;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: purple;
+}
