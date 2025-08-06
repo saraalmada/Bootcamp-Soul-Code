@@ -22,7 +22,8 @@ console.log('A área do retângulo é ' + area);
 // Exercício 6 – Desconto em produto
 let preco = prompt('Digite o preço do produto: ');
 let desconto = prompt('Digite o desconto em %: ');
-let precoComDesconto = Number(preco) - (Number(preco) * Number(desconto) / 100);
+let valorDesconto = Number(preco) * Number(desconto) / 100;
+let precoComDesconto = Number(preco) - valorDesconto;
 console.log(`Preço original: R$ ${Number(preco).toFixed(2)}
 Desconto: ${desconto}% 
 Preço com desconto: R$ ${Number(precoComDesconto).toFixed(2)}`);
