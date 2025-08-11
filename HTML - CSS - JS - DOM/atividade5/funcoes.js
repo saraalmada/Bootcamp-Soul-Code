@@ -63,6 +63,8 @@ let b = Number(prompt('Digite o segundo valor: '))
 
 console.log(multiplicacao(a, b));
 
+console.log(soma(1, 2))
+
 
 
 // 8- Arrow function que calcula o quadrado de um número

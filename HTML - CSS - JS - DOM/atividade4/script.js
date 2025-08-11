@@ -1,24 +1,24 @@
 // 1- Uma variável numeroDia guarda um número de 1 a 7 digitado pelo usuário. Crie uma estrutura if/else que exiba o nome do dia da semana correspondente (1 para "Domingo", 7 para "Sábado"). Se o número não estiver nesse intervalo, exiba "Número inválido".
 
-let numeroDia = Number(prompt('Digite um número de 1 a 7: '))
+// let numeroDia = Number(prompt('Digite um número de 1 a 7: '))
 
-if (numeroDia === 1) {
-    console.log('Domingo')
-} else if (numeroDia === 2) {
-    console.log('Segunda-feira')
-} else if (numeroDia === 3) {
-    console.log('Terça-feira')
-} else if (numeroDia === 4) {
-    console.log('Quarta-feira')
-} else if (numeroDia === 5) {
-    console.log('Quinta-feira')
-} else if (numeroDia === 6) {
-    console.log('Sexta-feira')
-} else if (numeroDia === 7) {
-    console.log('Sábado')
-} else {
-    console.log('Número inválido')
-}
+// if (numeroDia === 1) {
+//     console.log('Domingo')
+// } else if (numeroDia === 2) {
+//     console.log('Segunda-feira')
+// } else if (numeroDia === 3) {
+//     console.log('Terça-feira')
+// } else if (numeroDia === 4) {
+//     console.log('Quarta-feira')
+// } else if (numeroDia === 5) {
+//     console.log('Quinta-feira')
+// } else if (numeroDia === 6) {
+//     console.log('Sexta-feira')
+// } else if (numeroDia === 7) {
+//     console.log('Sábado')
+// } else {
+//     console.log('Número inválido')
+// }
 
 
 // 2- Duas variáveis, usuário e senha, guardam as informações de login. Verifique se o usuário é "admin". E a senha é "1234". Se as duas condições forem verdadeiras, exiba "Acesso concedido!". Caso contrário, exiba "Acesso negado!".
@@ -33,10 +33,12 @@ if (usuario === 'admin' && senha === '1234') {
 }
 
 
+
+
 // 3- Uma pessoa quer comprar um produto. Crie uma condição que verifica se a pessoa é membroVip OU se o valorDaCompra é maior que R$1000. Se uma dessas condições for verdadeira, exiba "Compra com desconto!". Senão, exiba "Compra com preço normal.".
 
-let membroVip = false
-let valorDaCompra = 1200
+let membroVip = true
+let valorDaCompra = 100
 
 if (membroVip == true || valorDaCompra > 1000) {
     console.log('Compra com desconto!')
@@ -71,13 +73,25 @@ for (let i = 1; i <= 10; i++) {
 
 // 7- Escreva um código usando o laço DO..While que faça a contagem REGRESSIVA de 10 ate 1. Dica: Assim como valor++ soma 1 no valor atual, valor-- subtrai 1 do valor atual.
 
-let contador = 10
+//Galeria do 
+
+// let contador = 10
+
+// do {
+//     console.log(contador)
+//     contador--
+// } while (contador >= 1)
+
+let a = 10
 
 do {
-    console.log(contador)
-    contador--
-} while (contador >= 1)
+    console.log(a)
+    a--
+} while (a >= 1)
 
+// for(let a = 10; a >= 1; a--) {
+//     console.log(a)
+// }
 
 // 8- Exibir números pares de 1 a 20, mostre apenas os pares de 1 a 20 usando for ou while.
 
@@ -89,6 +103,12 @@ while (i <= 20) {
     }
     i++
 }
+
+// for (let i = 20; i >= 1; i--) {
+//     if (i % 2 === 0) {
+//         console.log(i)
+//     }
+// }
 
 
 // 9- Crie um jogo onde um numeroSecreto é definido como 15. Use um laço while para continuar "pedindo" um palpite (simulado por uma variável palpite que você altera manualmente) até que o palpite seja igual ao número secreto. A cada tentativa errada, exiba "Você errou, tente de novo!". Quando acertar, exiba "Parabéns, você acertou!"
