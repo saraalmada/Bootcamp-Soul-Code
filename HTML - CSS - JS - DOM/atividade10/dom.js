@@ -19,7 +19,7 @@ const paragrafo = document.querySelector('p');
 const botao = document.querySelector('button');
 
 botao.addEventListener('click', function() {
-    paragrafo.style.display = (paragrafo.style.display == 'block' ? 'none' : 'block');
+    paragrafo.style.visibility = (paragrafo.style.visibility == 'visible' ? 'hidden' : 'visible');
 })
 
 
