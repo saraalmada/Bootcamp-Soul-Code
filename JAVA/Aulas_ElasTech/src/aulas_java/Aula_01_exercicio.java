@@ -14,7 +14,7 @@ public class Aula_01_exercicio {
 		System.out.println("Tenho " + altura + " metros de altura");
 		System.out.println("É " + pet + " que tenho 2 pets");
 		
-		
+		 
 		// 2
 		int numeroA = 10;
 		int numeroB = 21;

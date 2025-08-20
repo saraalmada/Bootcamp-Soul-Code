@@ -20,9 +20,8 @@ public class Aula_03_conversaoTipos {
 		double alturaC = Double.parseDouble(altura);
 		
 		double imc = pesoC / (alturaC * alturaC);
-		System.out.printf("Seu IMC é: %.2f%n", imc);
-		
-		
+		System.out.println("Seu IMC é: " + imc);
+		 
 		// Cadastro Simples
 		String nome = "Sara";
 		String idade = "26";
@@ -33,14 +32,14 @@ public class Aula_03_conversaoTipos {
 		String apresentacao = String.format("O usuário %s, de %d anos, tem um salário de R$ %.2f", nome, minhaIdade, salarioImaginario);
 		
 		System.out.println(apresentacao);
-		
+		 
 		// O Erro Proposital
 //		String numeroInvalido = "123z";
 //		
 //		int numeroInv = Integer.parseInt(numeroInvalido);
 //		//Exception in thread "main" java.lang.NumberFormatException: For input string: "123z"
 		
-		// Decisão de Compra
+		// Decisão de Compra 
 		String saldoConta = "500.75";
 		String precoProduto = "499.99";
 		String temCredito = "true";

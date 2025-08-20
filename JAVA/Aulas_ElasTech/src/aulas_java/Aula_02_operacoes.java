@@ -7,7 +7,7 @@ public class Aula_02_operacoes {
 	public static void main(String[] args) {		
 		// Calculadora de Média
 		double nota1 = 8.5 , nota2 = 7.0 , nota3 = 9.2;	
-		
+		 
 		double media = (nota1 + nota2 + nota3) / 3;
 		System.out.println("A média das notas é: " + media);
 		
