@@ -1,6 +1,6 @@
 package aulas_java;
 
-public class Aula_03_conversaoTipos {
+public class Aula_02_conversaoTipos {
 
 	public static void main(String[] args) {
 		// Soma de Entradas
