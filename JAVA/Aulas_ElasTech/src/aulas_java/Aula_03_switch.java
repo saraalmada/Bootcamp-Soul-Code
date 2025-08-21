@@ -72,7 +72,14 @@ public class Aula_03_switch {
 		
 		
 		// 2 - Cardápio com Opções Vegetarianas
-//		System.out.print("IF FIADO NOT FOOD \n------------------ \n1-Hambúrguer \n2-Pizza \n3-Salada \n4-Sair \n------------------ \nEscolha uma opção: ");
+//		System.out.print("IF FIADO NOT FOOD "
+//				+ "\n------------------ "
+//				+ "\n1-Hambúrguer "
+//				+ "\n2-Pizza "
+//				+ "\n3-Salada "
+//				+ "\n4-Sair "
+//				+ "\n------------------ "
+//				+ "\nEscolha uma opção: ");
 //		
 //		int comida = leitor.nextInt();
 //		String tipoDeComida;
@@ -110,8 +117,14 @@ public class Aula_03_switch {
 		
 		
 		// 3 - Tarifa de Transporte
-//		System.out.print("CATRACA DE POBRE \n------------------ \nE-Estudante \nA-Aposentado \nR-Regular \n------------------ \nEscolha uma opção: ");
-//		char tipo = leitor.next().charAt(0);
+//		System.out.print("CATRACA DE POBRE "
+//				+ "\n------------------ "
+//				+ "\nE-Estudante "
+//				+ "\nA-Aposentado "
+//				+ "\nR-Regular "
+//				+ "\n------------------ "
+//				+ "\nEscolha uma opção: ");
+//		char tipo = leitor.next().toUpperCase().charAt(0);
 //		
 //		boolean horarioPico = false;
 //		double tarifa = 5.5;
@@ -135,7 +148,7 @@ public class Aula_03_switch {
 //	                break;
 //			}
 //		}
-//		
+		
 //		System.out.println("Tarifa: R$" + tarifa);
 		
 		
@@ -163,25 +176,42 @@ public class Aula_03_switch {
 		
 		
 		// 5 - Operações Bancárias
-//		System.out.print("PAG BANK \n------------------ \nS - Saque \nD - Depósito \n------------------ \nEscolha uma opção: ");
-//		char transicao = leitor.next().charAt(0);
+//		System.out.print("PAG BANK "
+//				+ "\n------------------ "
+//				+ "\nS - Saque \nD - Depósito "
+//				+ "\n------------------ "
+//				+ "\nEscolha uma opção: ");
+//		char transicao = leitor.next().toUpperCase().charAt(0);
 //		double saldo = 500.0;
 //		
 //		switch(transicao) {
 //		case 'S':
-//			System.out.print("------------------ \nDigite o valor deseja sacar: ");
+//			System.out.print("------------------ "
+//					+ "\nDigite o valor deseja sacar: ");
 //			double valorSaque = leitor.nextDouble();
 //			if (valorSaque <= saldo) {
-//				System.out.print("------------------ \nSaque realizado! \nSaldo restante disponível: R$" + (saldo - valorSaque) + " \nObrigada por utilizar o PAG BANK!");
+//				System.out.print("------------------ "
+//						+ "\nSaque realizado! "
+//						+ "\nSaldo restante disponível: R$" + (saldo - valorSaque) 
+//						+ " \nObrigada por utilizar o PAG BANK!");
 //			} else {
-//				System.out.print("------------------ \nValor indisponível! \nSeu saldo é de: R$" + (saldo) + " \nVerifique sua conta PAG BANK para maiores informações!");
+//				System.out.print("------------------ "
+//						+ "\nSaldo insuficiente! "
+//						+ "\nSeu saldo é de: R$" + (saldo)
+//						+ "\nVerifique sua conta PAG BANK para maiores informações!");
 //			}
 //			break;
+//			
 //		case 'D':
-//			System.out.print("------------------ \nDigite o valor que deseja depositar: ");
+//			System.out.print("------------------ "
+//					+ "\nDigite o valor que deseja depositar: ");
 //			double deposito = leitor.nextDouble();
-//			System.out.print("------------------ \nDepósito realizado! \nNovo saldo: R$" + (saldo + deposito) + " \nObrigada por utilizar o PAG BANK!");
+//			System.out.print("------------------ "
+//					+ "\nDepósito realizado! "
+//					+ "\nNovo saldo: R$" + (saldo + deposito)
+//					+ "\nObrigada por utilizar o PAG BANK!");
 //			break;
+//			
 //		default:
 //			System.out.println("Opção inválida.");
 //          break;
@@ -190,30 +220,33 @@ public class Aula_03_switch {
 		
 		// 6 - Tipo de Veículo e Pedágio
 //		System.out.println("Qual seu tipo de veículo? (carro, moto ou caminhao)");
-//		String tipoVeiculo = leitor.next();
-//		double pedagio;
+//		String tipoVeiculo = leitor.next().toLowerCase();
+//		double pedagio = 0.0;
 //		
 //		switch (tipoVeiculo) {
 //		case "carro":
 //			pedagio = 15.0;
 //			break;
+//			
 //		case "moto":
 //			pedagio = 5.0;
 //			break;
+//			
 //		case "caminhao":
 //			pedagio = 30.0;
+//			System.out.println("O veículo possui eixo extra? (true/false)");
+//	        boolean eixoExtra = leitor.nextBoolean();
+//	        
+//			if (eixoExtra) {
+//				pedagio = pedagio * 1.2;
+//			}
 //			break;
+//			
 //		default:
 //			System.out.println("Opção inválida.");
 //			break;
 //		}
 //		
-//		System.out.println("O veículo possui eixo extra? (true/false)");
-//        boolean eixoExtra = leitor.nextBoolean();
-//        
-//		if (eixoExtra) {
-//			pedagio = pedagio * 1.2;
-//		} 
 //		
 //		System.out.println("O valor do pedágio para seu veículo é de: R$ " + pedagio);
 		
@@ -255,23 +288,20 @@ public class Aula_03_switch {
 //		System.out.println("Digite o mês de 1 a 12: ");
 //		int mesDoAno = leitor.nextInt();
 //		
-//		String estacaoDoAno = "";
+//		boolean inverno = false;
 //		
 //		switch (mesDoAno) {
 //		case 12, 1, 2:
-//			estacaoDoAno = "verao";
 //			System.out.println("Verão");
 //			break;
-//		case 3, 4, 5, 6:
-//			estacaoDoAno = "outono";
+//		case 3, 4, 5:
 //			System.out.println("Outuno");
 //			break;
-//		case 7, 8, 9:
-//			estacaoDoAno = "inverno";
+//		case 6, 7, 8:
 //			System.out.println("Inverno");
 //			break;
-//		case 10, 11:
-//			estacaoDoAno = "primavera";
+//		case 9, 10, 11:
+//			inverno = true;
 //			System.out.println("Primavera");
 //			break;
 //		default:
@@ -279,7 +309,7 @@ public class Aula_03_switch {
 //			break;
 //		}
 //		
-//		if (estacaoDoAno.equals("inverno")) {
+//		if (inverno) {
 //			System.out.println("Época de chocolate quente!");
 //		}
 		
