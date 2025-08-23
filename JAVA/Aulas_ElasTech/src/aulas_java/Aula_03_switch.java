@@ -124,32 +124,32 @@ public class Aula_03_switch {
 //				+ "\nR-Regular "
 //				+ "\n------------------ "
 //				+ "\nEscolha uma opção: ");
-//		char tipo = leitor.next().toUpperCase().charAt(0);
-//		
-//		boolean horarioPico = false;
-//		double tarifa = 5.5;
-//		
-//		if (!horarioPico) {
-//			switch (tipo) {
-//				case 'E': 
-//					tarifa = tarifa / 2;
-//					break;
-//					
-//				case 'A':
-//					tarifa = 0;
-//					break;
-//					
-//				case 'R':
-//					tarifa = 4.4;
-//					break;	
-//					
-//				default:
-//					System.out.println("Opção inválida.");
-//	                break;
-//			}
-//		}
+		char tipo = leitor.next().toUpperCase().charAt(0);
 		
-//		System.out.println("Tarifa: R$" + tarifa);
+		boolean horarioPico = false;
+		double tarifa = 5.5;
+		
+		if (!horarioPico) {
+			switch (tipo) {
+				case 'E': 
+					tarifa = tarifa / 2;
+					break;
+					
+				case 'A':
+					tarifa = 0;
+					break;
+					
+				case 'R':
+					tarifa = 4.4;
+					break;	
+					
+				default:
+					System.out.println("Opção inválida.");
+	                break;
+			}
+		}
+		
+		System.out.println("Tarifa: R$" + tarifa);
 		
 		
 		// 4 - Sistema de Notas com Conceito
