@@ -10,16 +10,16 @@ public class Aula_04_loop_desafios {
 		// 1. Sequência de Fibonacci 
 		// É uma série de números inteiros onde cada termo é o resultado da adição dos dois números que o precedem. 
 		
-		int comeco0 = 0;
-		int comeco1 = 1;
-		
-		for (int i = 0; i < 15; i++) {
-			System.out.println(comeco0);
-			
-			int seguinte = comeco0 + comeco1;
-			comeco0 = comeco1;
-			comeco1 = seguinte;
-		}
+//		int comeco0 = 0;
+//		int comeco1 = 1;
+//		
+//		for (int i = 0; i < 15; i++) {
+//			System.out.println(comeco0);
+//			
+//			int seguinte = comeco0 + comeco1;
+//			comeco0 = comeco1;
+//			comeco1 = seguinte;
+//		}
 		
 		
 		
@@ -65,22 +65,22 @@ public class Aula_04_loop_desafios {
 		
 		
 		// 4. Adivinhe o Número Secreto
-//		int numeroSecreto = new java.util.Random().nextInt(100) + 1;
-//		
-//		int palpite = 0;
-//		
-//		while (palpite != numeroSecreto) {
-//			System.out.print("Digite seu palpite de 1 a 100: ");
-//			palpite = leitor.nextInt();
-//			
-//			if (palpite < numeroSecreto) {
-//                System.out.println("Dica: O número secreto é maior que " + palpite);
-//            } else if (palpite > numeroSecreto) {
-//                System.out.println("Dica: O número secreto é menor que " + palpite);
-//            } else {
-//            	System.out.println("Parabéns! Você acertou!");
-//            }
-//		}
+		int numeroSecreto = new java.util.Random().nextInt(100) + 1;
+		
+		int palpite = 0;
+		
+		while (palpite != numeroSecreto) {
+			System.out.print("Digite seu palpite de 1 a 100: ");
+			palpite = leitor.nextInt();
+			
+			if (palpite < numeroSecreto) {
+                System.out.println("Dica: O número secreto é maior que " + palpite);
+            } else if (palpite > numeroSecreto) {
+                System.out.println("Dica: O número secreto é menor que " + palpite);
+            } else {
+            	System.out.println("Parabéns! Você acertou!");
+            }
+		}
 //        
         		
 		
