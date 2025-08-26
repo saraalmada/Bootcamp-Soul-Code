@@ -10,36 +10,55 @@ public class Aula_04_loop_desafios {
 		// 1. Sequência de Fibonacci 
 		// É uma série de números inteiros onde cada termo é o resultado da adição dos dois números que o precedem. 
 		
-//		int comeco0 = 0;
-//		int comeco1 = 1;
-//		
-//		for (int i = 0; i < 15; i++) {
-//			System.out.println(comeco0);
-//			
-//			int seguinte = comeco0 + comeco1;
-//			comeco0 = comeco1;
-//			comeco1 = seguinte;
-//		}
+		int comeco0 = 0;
+		int comeco1 = 1;
+		
+		for (int i = 1; i <= 15; i++) {
+			System.out.println(comeco0);
+			
+			int seguinte = comeco0 + comeco1;
+			comeco0 = comeco1;
+			comeco1 = seguinte;
+		}
 		
 		
 		
 		
 		
 		// 2. Desenhando um Triângulo de Asteriscos
+		
 //		int linhas = 10;
 		
-//		for (int i = 1; i <= 10; i++) {
+		//Para triângulo retângulo:
+		
+//		for (int i = 1; i <= linhas; i++) {
 //			
 //			for (int a = 1; a <= i; a++) {
 //				System.out.print("*");
 //			}
+//		
 //			System.out.println();			
 //		}
-	
+		
+		//Para triângulo escaleno:
+		
+//		for (int i = 1; i <= linhas; i++) {
+//			
+//			for (int espaco = 1; espaco <= linhas - i; espaco++) {
+//                System.out.print(" ");
+//            }
+//			
+//			for (int a = 1; a <= (2 * i - 1); a++) {
+//                System.out.print("*");
+//            }
+//			
+//            System.out.println();
+//		}
+
 		
 		
-		
-		
+
+        
 		// 3. Soma de Compras até Parar
 //		double produto = 0;
 //		double soma = 0;
@@ -65,23 +84,23 @@ public class Aula_04_loop_desafios {
 		
 		
 		// 4. Adivinhe o Número Secreto
-		int numeroSecreto = new java.util.Random().nextInt(100) + 1;
-		
-		int palpite = 0;
-		
-		while (palpite != numeroSecreto) {
-			System.out.print("Digite seu palpite de 1 a 100: ");
-			palpite = leitor.nextInt();
-			
-			if (palpite < numeroSecreto) {
-                System.out.println("Dica: O número secreto é maior que " + palpite);
-            } else if (palpite > numeroSecreto) {
-                System.out.println("Dica: O número secreto é menor que " + palpite);
-            } else {
-            	System.out.println("Parabéns! Você acertou!");
-            }
-		}
-//        
+//		int numeroSecreto = new java.util.Random().nextInt(100) + 1;
+//		
+//		int palpite = 0;
+//		
+//		while (palpite != numeroSecreto) {
+//			System.out.print("Digite seu palpite de 1 a 100: ");
+//			palpite = leitor.nextInt();
+//			
+//			if (palpite < numeroSecreto) {
+//                System.out.println("Dica: O número secreto é maior que " + palpite);
+//            } else if (palpite > numeroSecreto) {
+//                System.out.println("Dica: O número secreto é menor que " + palpite);
+//            } else {
+//            	System.out.println("Parabéns! Você acertou!");
+//            }
+//		}
+        
         		
 		
 		
