@@ -6,14 +6,14 @@ public class Aula_05_arrayList {
 
 	public static void main(String[] args) {
 		// 1. Verificação de Presença na Lista
-//		ArrayList<String> nomes = new ArrayList<>();
-//		
-//		nomes.add("Alice");
-//		nomes.add("Fernanda");
-//		nomes.add("Camila");
-//		
-//		System.out.println(nomes.contains("Camila"));
-//		System.out.println(nomes.contains("Barbara"));
+		ArrayList<String> nomes = new ArrayList<>();
+		
+		nomes.add("Alice");
+		nomes.add("Fernanda");
+		nomes.add("Camila");
+		
+		System.out.println(nomes.contains("Camila"));
+		System.out.println(nomes.contains("Barbara"));
 		
 		
 		
