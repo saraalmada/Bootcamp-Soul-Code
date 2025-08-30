@@ -135,7 +135,9 @@ public class Aula_07_matriz {
 		
 		// 8.Crie um ArrayList com nomes de alunos e verifique, usando foreach, se um determinado nome está na lista.
 		
+		
 		// 9. Crie uma matriz 2x3 com valores inteiros e exiba todos os valores utilizando dois foreach.
+		
 		
 		// 10.Crie um ArrayList com números inteiros e conte quantos são pares usando foreach.
 
