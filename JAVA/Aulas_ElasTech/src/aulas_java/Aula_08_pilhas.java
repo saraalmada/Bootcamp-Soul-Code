@@ -71,8 +71,6 @@ public class Aula_08_pilhas {
 
 		System.out.println("Prato no topo: " + pratos.peek());
 
-
-
 	}
 
 }
