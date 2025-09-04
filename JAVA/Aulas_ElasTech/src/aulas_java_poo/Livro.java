@@ -6,8 +6,7 @@ public class Livro {
 	
 	// Constructor 1
 	public Livro(String titulo) {
-		this.titulo = titulo;
-		this.autor = "Desconhecido";
+		this(titulo, "Desconhecido");
 	}
 	
 	// Constructor 2
