@@ -6,6 +6,7 @@ public class Principal {
 		// 1, 3, 6 e 10
 		Carro carro = new Carro("Toyota", 2020, 4);
 		Moto moto = new Moto("Yamaha", 2023, 250);
+		Veiculo bicicleta = new Veiculo("Caloi", 2025);
 		
 		System.out.println("Marca: " + carro.getMarca() 
 						+ "\nAno: " + carro.getAno() 
@@ -23,6 +24,7 @@ public class Principal {
 		System.out.println();
 		carro.mostrarInfo();
 		moto.mostrarInfo();
+		bicicleta.mostrarInfo();
 		
 		// 2, 7 e 9
 //		Aluno aluno = new Aluno("Sara", 26, "056.123.543-28", 12345);

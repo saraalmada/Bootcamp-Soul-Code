@@ -31,7 +31,7 @@ public class Veiculo {
 	
 	public void mostrarInfo() {
 		System.out.println("Marca: " + this.marca 
-		+ "\nAno: " + this.marca 
+		+ "\nAno: " + this.ano 
 		+ "\n");
 	}
 }
