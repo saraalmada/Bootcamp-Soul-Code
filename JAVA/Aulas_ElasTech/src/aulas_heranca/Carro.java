@@ -1,7 +1,7 @@
 package aulas_heranca;
 
 public class Carro extends Veiculo{
-	private int portas;
+	private int portas;	
 	
 	public Carro(String marca, int ano, int portas) {
 		super(marca, ano);
@@ -16,6 +16,12 @@ public class Carro extends Veiculo{
 		this.portas = portas;
 	}
 	
-	
+	@Override
+	public void mostrarInfo() {
+		System.out.println("Marca: " + getMarca()
+						+ "\nAno: " + getAno()
+						+ "\nPortas: " + this.portas
+						+ "\n");
+	}
 
 }

@@ -3,8 +3,8 @@ package aulas_heranca;
 public class Aluno extends Pessoa {
 	private int matricula;
 
-	public Aluno(String nome, int idade, int matricula) {
-		super(nome, idade);
+	public Aluno(String nome, int idade, String cpf, int matricula) {
+		super(nome, idade, cpf);
 		this.matricula = matricula;
 	}
 

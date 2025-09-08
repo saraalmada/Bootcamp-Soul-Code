@@ -7,7 +7,6 @@ public class Veiculo {
 	public Veiculo(String marca, int ano) {
 		this.marca = marca;
 		this.ano = ano;
-		
 	}
 
 	public String getMarca() {
@@ -28,5 +27,11 @@ public class Veiculo {
 	
 	public void acelerar() {
 		System.out.println("Acelerando");
+	}
+	
+	public void mostrarInfo() {
+		System.out.println("Marca: " + this.marca 
+		+ "\nAno: " + this.marca 
+		+ "\n");
 	}
 }

@@ -6,4 +6,13 @@ public class ContaBancaria {
 	public ContaBancaria(double saldoInicial) {
 		this.saldoInicial = saldoInicial;
 	}
+
+	public double getSaldoInicial() {
+		return saldoInicial;
+	}
+
+	public void setSaldoInicial(double saldoInicial) {
+		this.saldoInicial = saldoInicial;
+	}
+	
 }
