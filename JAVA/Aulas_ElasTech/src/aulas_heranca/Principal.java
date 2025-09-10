@@ -6,25 +6,25 @@ public class Principal {
 		// 1, 3, 6 e 10
 		Carro carro = new Carro("Toyota", 2020, 4);
 		Moto moto = new Moto("Yamaha", 2023, 250);
-		Veiculo bicicleta = new Veiculo("Caloi", 2025);
+//		Veiculo bicicleta = new Veiculo("Caloi", 2025);
 		
-		System.out.println("Marca: " + carro.getMarca() 
-						+ "\nAno: " + carro.getAno() 
-						+ "\nPortas: " + carro.getPortas() 
-						+ "\n");
+//		System.out.println("Marca: " + carro.getMarca() 
+//						+ "\nAno: " + carro.getAno() 
+//						+ "\nPortas: " + carro.getPortas() 
+//						+ "\n");
 		
-		System.out.println("Marca: " + moto.getMarca() 
-						+ "\nAno: " + moto.getAno() 
-						+ "\nCilindradas: " + moto.getCilindradas() + "cc"
-						+ "\n");
+//		System.out.println("Marca: " + moto.getMarca() 
+//						+ "\nAno: " + moto.getAno() 
+//						+ "\nCilindradas: " + moto.getCilindradas() + "cc"
+//						+ "\n");
 		
-		carro.acelerar();
-		moto.acelerar();
-		
-		System.out.println();
-		carro.mostrarInfo();
-		moto.mostrarInfo();
-		bicicleta.mostrarInfo();
+//		carro.acelerar();
+//		moto.acelerar();
+//		
+//		System.out.println();
+//		carro.mostrarInfo();
+//		moto.mostrarInfo();
+//		bicicleta.mostrarInfo();
 		
 		// 2, 7 e 9
 //		Aluno aluno = new Aluno("Sara", 26, "056.123.543-28", 12345);
@@ -60,11 +60,11 @@ public class Principal {
 //		cachorro.emitirSom();
 		
 		// 5
-//		Gerente g1 = new Gerente();
-//		Funcionario f1 = new Funcionario();
-//				
-//		System.out.println(g1.trabalhar() + "\n");
-//		System.out.println(f1.trabalhar());
+		Gerente g1 = new Gerente();
+		Funcionario f1 = new Funcionario();
+				
+		System.out.println(g1.trabalhar() + "\n");
+		System.out.println(f1.trabalhar());
 		
 		// 8
 //		ContaCorrente c1 = new ContaCorrente(5480.59);

@@ -7,7 +7,7 @@ public class Livro {
 	public Livro(String titulo, String autor, boolean disponivel) {
 		this.titulo = titulo;
 		this.autor = autor;
-		this.disponivel = disponivel;
+		this.disponivel = true;
 		}
 	
 	public void Emprestar() {
@@ -36,5 +36,13 @@ public class Livro {
 			status = "Status: Emprestado";
 		}
 		return status;
+	}
+
+	public boolean isDisponivel() {
+		return disponivel;
+	}
+
+	public void setDisponivel(boolean disponivel) {
+		this.disponivel = disponivel;
 	}
 }

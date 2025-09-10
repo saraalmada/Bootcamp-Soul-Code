@@ -18,9 +18,8 @@ public class Moto extends  Veiculo {
 	
 	@Override
 	public void mostrarInfo() {
-		System.out.println("Marca: " + getMarca() 
-						+ "\nAno: " + getAno() 
-						+ "\nCilindradas: " + this.cilindradas + "cc"
+		super.mostrarInfo();
+		System.out.println("Cilindradas: " + this.cilindradas + "cc"
 						+ "\n");
 	}
 	

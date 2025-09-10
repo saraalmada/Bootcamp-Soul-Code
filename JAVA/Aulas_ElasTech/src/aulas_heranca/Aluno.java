@@ -2,6 +2,7 @@ package aulas_heranca;
 
 public class Aluno extends Pessoa {
 	private int matricula;
+	long cpf2;
 
 	public Aluno(String nome, int idade, String cpf, int matricula) {
 		super(nome, idade, cpf);

@@ -26,9 +26,8 @@ public class Principal {
 //					+ sabonete.getValorTotalEmEstoque() + "\n");
 
 		// 3
-//		Livro l1 = new Livro("A crônicas de Nárnia", "Sara", true);
-//		Livro l2 = new Livro("A crônicas de Nárnia", "Sara", true);
-//		
+		Livro l1 = new Livro("A crônicas de Nárnia", "Sara", true);
+		
 //		l1.Emprestar();
 //		System.out.println(l1.getStatus());
 //		l1.Emprestar();
@@ -38,9 +37,21 @@ public class Principal {
 //		System.out.println(l1.getStatus());
 //		l1.Devolver();
 //		System.out.println();
-//		
+		
+		Livro l2 = new Livro("O pequeno príncipe", "Antoine de Saint-Exupéry", false);
+		
+		l2.setDisponivel(false);
+		
+		l2.Emprestar();
+		System.out.println(l2.getStatus());
+		
+		l2.Devolver();
+		System.out.println(l2.getStatus());
+		
+		
 //		l2.Emprestar();
 //		System.out.println(l2.getStatus());
+		
 //		l2.Emprestar();
 //		System.out.println();
 //
@@ -50,25 +61,25 @@ public class Principal {
 //		System.out.println();
 
 		// 4
-		ControleArCondicionado ar1 = new ControleArCondicionado(false, 18);
-		
-		ar1.aumentarTemperatura();
-		ar1.mostrarStatus();
-		
-		System.out.println();
-		ar1.ligar();
-		ar1.mostrarStatus();
-		
-		System.out.println();
-		ar1.aumentarTemperatura();
-		ar1.diminuirTemperatura();
-		ar1.diminuirTemperatura();
-		ar1.diminuirTemperatura();
-		ar1.mostrarStatus();
-
-		System.out.println();
-		ar1.desligar();
-		ar1.mostrarStatus();
+//		ControleArCondicionado ar1 = new ControleArCondicionado(false, 18);
+//		
+//		ar1.aumentarTemperatura();
+//		ar1.mostrarStatus();
+//		
+//		System.out.println();
+//		ar1.ligar();
+//		ar1.mostrarStatus();
+//		
+//		System.out.println();
+//		ar1.aumentarTemperatura();
+//		ar1.diminuirTemperatura();
+//		ar1.diminuirTemperatura();
+//		ar1.diminuirTemperatura();
+//		ar1.mostrarStatus();
+//
+//		System.out.println();
+//		ar1.desligar();
+//		ar1.mostrarStatus();
 		
 
 	}
