@@ -15,6 +15,7 @@ public class Gerente extends Funcionario {
 
 	@Override
 	public void exibirInformacoes() {		
+		calcularSalario();
 		System.out.println("Nome: " + getNome());
 		System.out.println("Salário: " + this.novoSalario);
 	}

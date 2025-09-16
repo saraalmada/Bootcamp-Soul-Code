@@ -62,11 +62,15 @@ public class Principal {
 		
 		// 8
 //		Gerente gerente = new Gerente("Juliana", 20000);
+//		Vendedor vendedor = new Vendedor("Keylla", 100);
 //		
-//		gerente.calcularSalario();
 //		gerente.exibirInformacoes();
+//		System.out.println("-----------------");
+//		vendedor.exibirInformacoes();
 		
 		// 9
+		
+		
 		
 		
 		
