@@ -69,7 +69,18 @@ public class Principal {
 //		vendedor.exibirInformacoes();
 		
 		// 9
-		
+        Cliente cliente = new Cliente();
+        Administrador admin = new Administrador();
+
+        System.out.println(cliente.login("sara", "errado"));
+        System.out.println(cliente.login("sara", "@123"));
+        cliente.logout();
+        
+        System.out.println();
+        System.out.println(admin.login("sara", "123@"));
+        System.out.println(admin.login("admin", "123@"));
+        admin.logout();
+
 		
 		
 		

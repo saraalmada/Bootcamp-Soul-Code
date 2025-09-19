@@ -9,7 +9,7 @@ public class Circulo extends FormaGeometrica {
 	
 	@Override 
 	public void calcularArea() {
-		double area = 2 * Math.PI * this.raio;
+		double area = Math.PI * (Math.pow(this.raio, 2));
 		System.out.printf("A área do círculo é %.2f", area);		 
 	}
 }
