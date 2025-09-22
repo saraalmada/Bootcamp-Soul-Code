@@ -147,6 +147,7 @@ SELECT
     MONTH(data_venda) AS mes,
     SUM(quantidade * preco_unitario) AS faturamento_total
 FROM vendas
+WHERE YEAR(data_venda) = 2025
 GROUP BY mes
 ORDER BY mes ASC;
 
