@@ -122,3 +122,35 @@ INSERT INTO itens_pedido (pedido_id, produto_id, quantidade) VALUES
 (4, 1, 1),
 (4, 4, 2);
 
+-- Mostrar todos os pedidos realizados com nome do cliente.
+SELECT 
+    p.id_pedido, 
+    c.nome AS nome_cliente, 
+    p.data
+FROM pedidos AS p  
+INNER JOIN clientes AS c 
+    ON p.cliente_id = c.id_cliente;
+
+-- Mostrar o total gasto por cada cliente (SUM(preco * quantidade) com JOIN).
+SELECT 
+    c.nome AS nome_cliente, 
+    SUM(pr.preco * ip.quantidade) AS total_gasto
+FROM clientes AS c
+INNER JOIN pedidos AS p 
+    ON c.id_cliente = p.cliente_id
+INNER JOIN itens_pedido AS ip 
+    ON p.id_pedido = ip.pedido_id
+INNER JOIN produtos AS pr 
+    ON ip.produto_id = pr.id_produto
+GROUP BY c.id_cliente;
+
+-- Mostrar o produto mais vendido (GROUP BY produto).
+SELECT 
+    pr.nome AS nome_produto, 
+    SUM(ip.quantidade) AS total_vendido
+FROM produtos AS pr
+INNER JOIN itens_pedido AS ip 
+    ON pr.id_produto = ip.produto_id
+GROUP BY pr.id_produto
+ORDER BY total_vendido DESC
+LIMIT 1;
