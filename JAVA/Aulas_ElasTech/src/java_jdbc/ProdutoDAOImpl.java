@@ -8,6 +8,10 @@ import java.util.*;
 
 public class ProdutoDAOImpl implements ProdutoDAO {
 	private Connection conexao;
+	
+	public ProdutoDAOImpl (Connection conexao) {
+		this.conexao = conexao;
+	}
 
 	@Override
 	public void inserir(Produto p) {
