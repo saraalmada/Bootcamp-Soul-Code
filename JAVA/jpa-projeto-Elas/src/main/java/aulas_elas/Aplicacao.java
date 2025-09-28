@@ -11,9 +11,25 @@ public class Aplicacao {
 		
 		AutorDAOJPAImpl autorDAO = new AutorDAOJPAImpl(em);
 		
-		Autor novoAutor = new Autor("Machado de Assis", LocalDate.of(1940, 6, 10));
-		autorDAO.salvar(novoAutor);
+		// 1. Criar e salvar autor
+//		Autor novoAutor = new Autor("Keylla", LocalDate.of(2010, 10, 30));
+//		autorDAO.salvar(novoAutor);
+//		System.out.println("Autor salvo: " + novoAutor.getNome());
 
+		// 2. Buscar por ID
+        Autor autor = new Autor();
+        Autor autorBuscado = autorDAO.buscarPorID(autor.getId());
+        System.out.println("Autor buscado: " + autorBuscado.getNome());
+
+//		autorDAO.buscarPorID(4);
+//		
+//		autorDAO.ListarTodos();
+//		
+//		autorDAO.atualizar("Sara");
+//		
+//		autorDAO.deletarPorID(4);
+		
+		
 	}
 
 }

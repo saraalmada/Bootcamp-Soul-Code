@@ -21,26 +21,31 @@ public class AutorDAOJPAImpl implements AutorDAO {
 
 	@Override
 	public Autor buscarPorID(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return em.find(Autor.class, id);
 	}
 
 	@Override
 	public List<Autor> ListarTodos() {
-		// TODO Auto-generated method stub
-		return null;
+		return em.createQuery("SELECT a FROM Autor a", Autor.class)
+                .getResultList();
 	}
 
 	@Override
 	public void atualizar(Autor autor) {
-		// TODO Auto-generated method stub
+		em.getTransaction().begin();
+		em.merge(autor); 
+		em.getTransaction().commit();
 
 	}
 
 	@Override
 	public void deletarPorID(int id) {
-		// TODO Auto-generated method stub
-
+		Autor autor = em.find(Autor.class, id);
+		if (autor != null) {
+			em.getTransaction().begin();
+			em.remove(autor);
+			em.getTransaction().commit();
+		}
 	}
 
 }
