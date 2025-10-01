@@ -2,14 +2,11 @@ package com.example.bibliotecaApp.bibliotecaApp.model;
 
 import java.time.LocalDate;
 
-import java.time.*;
-
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "autores")
 public class Autor {
-
 
 	public Autor(Integer id, String nome, LocalDate dataNasc) {
 		this.id = id;
@@ -24,7 +21,7 @@ public class Autor {
 	@Column(name = "nome", nullable = false, length = 100)
 	private String nome;
 
-	@Column(name = "data_nasc")
+	@Column(name = "data_nasc", nullable = false)
 	private LocalDate dataNasc;
 
 	public Integer getId() {
