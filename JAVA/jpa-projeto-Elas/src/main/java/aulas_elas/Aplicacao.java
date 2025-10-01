@@ -17,9 +17,9 @@ public class Aplicacao {
 //		System.out.println("Autor salvo: " + novoAutor.getNome());
 
 		// 2. Buscar por ID
-        Autor autor = new Autor();
-        Autor autorBuscado = autorDAO.buscarPorID(autor.getId());
-        System.out.println("Autor buscado: " + autorBuscado.getNome());
+//        Autor autor = new Autor();
+//        Autor autorBuscado = autorDAO.buscarPorID(autor.getId());
+//        System.out.println("Autor buscado: " + autorBuscado.getNome());
 
 //		autorDAO.buscarPorID(4);
 //		
