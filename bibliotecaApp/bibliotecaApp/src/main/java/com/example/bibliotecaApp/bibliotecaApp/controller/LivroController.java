@@ -13,44 +13,41 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.bibliotecaApp.bibliotecaApp.model.Autor;
-import com.example.bibliotecaApp.bibliotecaApp.service.AutorService;
+import com.example.bibliotecaApp.bibliotecaApp.model.Livro;
+import com.example.bibliotecaApp.bibliotecaApp.service.LivroService;
 
 @RestController
-@RequestMapping("/autores")
-public class PrimeiroController {
+@RequestMapping("/livros")
+public class LivroController {
 	
 	@Autowired
-	private AutorService autorService;
+	private LivroService livroService;
 	
 	@GetMapping("/{id}")
-	public Optional<Autor> buscarPorId(@PathVariable("id") Integer id) {
-		return autorService.buscarPorId(id);
+	public Optional<Livro> buscarPorId(@PathVariable("id") Integer id) {
+		return livroService.buscarPorId(id);
 	}
 	
 	@GetMapping()
-	public List<Autor> listarTodos() {
-		return autorService.listarTodos();
+	public List<Livro> listarTodos() {
+		return livroService.listarTodos();
 	}
 	
-	@PostMapping("/addAutor")
-	public Autor salvar(@RequestBody Autor autor) {
-		System.out.println("Autor: " + autor);
-		autorService.salvar(autor);
-		return autor;
+	@PostMapping("/addLivro")
+	public Livro salvar(@RequestBody Livro livro) {
+		System.out.println("Livro: " + livro);
+		livroService.salvar(livro);
+		return livro;
 	}
 	
 	@DeleteMapping("/{id}")
 	public void deletar(@PathVariable("id") Integer id) {
-		autorService.deletar(id);
+		livroService.deletar(id);
 	}
 
-	
 	@PutMapping("/{id}")
-	public void atualizar(@PathVariable("id") Integer id, @RequestBody Autor autor) {
-		autor.setId(id);
-		autorService.salvar(autor);
+	public void atualizar(@PathVariable("id") Integer id, @RequestBody Livro livro) {
+		livro.setId(id);
+		livroService.salvar(livro);
 	}
-	
-	
 }

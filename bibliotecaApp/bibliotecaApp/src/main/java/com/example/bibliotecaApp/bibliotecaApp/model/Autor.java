@@ -7,7 +7,9 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "autores")
 public class Autor {
-
+	
+	public Autor() {}
+	
 	public Autor(Integer id, String nome, LocalDate dataNasc) {
 		this.id = id;
 		this.nome = nome;

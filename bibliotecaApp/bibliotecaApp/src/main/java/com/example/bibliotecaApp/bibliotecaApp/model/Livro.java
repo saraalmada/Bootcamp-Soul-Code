@@ -6,28 +6,29 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "livros")
-
 public class Livro {
 	
-	public Livro(Integer id, String titulo, LocalDate data_publicacao, Integer codAutor) {
+	public Livro() {};
+	
+	public Livro(Integer id, String titulo, LocalDate data_publicacao, Integer codigo_autor) {		
 		this.id = id;
 		this.titulo = titulo;
 		this.data_publicacao = data_publicacao;
-		this.codAutor = codAutor;
+		this.codigo_autor = codigo_autor;
 	}
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name = "titulo", nullable = false, length = 100)
+	@Column(name = "titulo", nullable = false)
 	private String titulo;
 	
-	@Column(name = "data_publicacao")
+	@Column(name = "data_publicacao", nullable = false)
 	private LocalDate data_publicacao;
 	
-	@Column(name = "codigo_autor")
-	private Integer codAutor;
+	@Column(name = "codigo_autor", nullable = false)
+	private Integer codigo_autor;
 
 	public Integer getId() {
 		return id;
@@ -53,12 +54,13 @@ public class Livro {
 		this.data_publicacao = data_publicacao;
 	}
 
-	public Integer getCodAutor() {
-		return codAutor;
+	public Integer getCodigo_autor() {
+		return codigo_autor;
 	}
 
-	public void setCodAutor(Integer codAutor) {
-		this.codAutor = codAutor;
+	public void setCodigo_autor(Integer codigo_autor) {
+		this.codigo_autor = codigo_autor;
 	}
-	
+
+
 }

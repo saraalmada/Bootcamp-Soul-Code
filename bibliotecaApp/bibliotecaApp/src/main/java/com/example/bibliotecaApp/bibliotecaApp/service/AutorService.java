@@ -12,6 +12,7 @@ import jakarta.transaction.Transactional;
 
 @Service
 public class AutorService {
+	
 	@Autowired
 	private AutorRepo repository;
 	
