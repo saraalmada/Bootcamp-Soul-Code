@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.bibliotecaApp.bibliotecaApp.model.Autor;
 import com.example.bibliotecaApp.bibliotecaApp.service.AutorService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/autores")
 public class PrimeiroController {
@@ -24,7 +26,7 @@ public class PrimeiroController {
 	private AutorService autorService;
 	
 	@GetMapping("/{id}")
-	public Optional<Autor> buscarPorId(@PathVariable("id") Integer id) {
+	public Optional<Autor> buscarPorId(@Valid @PathVariable("id") Integer id) {
 		return autorService.buscarPorId(id);
 	}
 	
@@ -34,20 +36,20 @@ public class PrimeiroController {
 	}
 	
 	@PostMapping("/addAutor")
-	public Autor salvar(@RequestBody Autor autor) {
+	public Autor salvar(@Valid @RequestBody Autor autor) {
 		System.out.println("Autor: " + autor);
 		autorService.salvar(autor);
 		return autor;
 	}
 	
 	@DeleteMapping("/{id}")
-	public void deletar(@PathVariable("id") Integer id) {
+	public void deletar(@Valid @PathVariable("id") Integer id) {
 		autorService.deletar(id);
 	}
 
 	
 	@PutMapping("/{id}")
-	public void atualizar(@PathVariable("id") Integer id, @RequestBody Autor autor) {
+	public void atualizar(@Valid @PathVariable("id") Integer id, @Valid @RequestBody Autor autor) {
 		autor.setId(id);
 		autorService.salvar(autor);
 	}
