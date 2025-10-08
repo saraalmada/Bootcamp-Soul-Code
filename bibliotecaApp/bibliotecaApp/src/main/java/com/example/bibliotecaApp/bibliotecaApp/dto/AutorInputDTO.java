@@ -6,12 +6,12 @@ import jakarta.validation.constraints.*;
 
 public class AutorInputDTO {
 
-	@NotBlank(message = "É obrigatório um nome e não pode ter só espaços")
-	@Size(min = 3, message = "Deve ter no mínimo 3 caracteres")
+	@NotBlank(message = "Nome é obrigatório, não pode conter apenas espaços")
+	@Size(min = 3, message = "O nome deve ter no mínimo 3 caracteres")
 	private String nome;
 
-	@NotNull(message = "Campo invalido")
-	@Past(message = "Não permitimos autores do futuro!")
+	@NotNull(message = "A data é obrigatória")
+	@Past(message = "A data deve estar no passado!")
 	private LocalDate dataNasc;
 
 	public String getNome() {
