@@ -6,11 +6,11 @@ import jakarta.validation.constraints.*;
 
 public class LivroInputDTO {
 	
-	@NotBlank(message = "É obrigatório um nome e não pode ter só espaços")
-	@Size(min = 5, max = 100, message = "Deve ter no mínimo 5 caracteres")
+	@NotBlank(message = "É obrigatório um título, não pode ter só espaços")
+	@Size(min = 5, max = 100, message = "Deve ter no mínimo 5 caracteres e no máximo 100")
 	private String titulo;
 	
-	@NotNull(message = "Campo invalido")
+	@NotNull(message = "Campo obrigatório")
 	@Past(message = "Não permitimos autores do futuro!")
 	private LocalDate data_publicacao;
 	
@@ -18,12 +18,12 @@ public class LivroInputDTO {
 	@Pattern(regexp = "^\\d{13}$", message = "O código deve conter exatamente 13 dígitos numéricos.")
 	private String isbn;
 	
-	@NotNull(message = "Campo invalido")
-	@Min(10)
-	@Max(1000)
+	@NotNull(message = "Campo obrigatório")
+	@Min(value = 10, message = "Número mínimo de páginas é 10")
+	@Max(value = 100, message = "Número máximo de páginas é 100")
 	private Integer numero_paginas;
 	
-	@NotNull(message = "Campo invalido")
+	@NotNull(message = "Campo obrigatório")
 	@DecimalMin(value = "20.00")
 	private Double preco;
 
